@@ -1,5 +1,6 @@
-@import '../css/reset/reset.scss';
-
+@import '../css/reset/reset';
+@import '../css/scss/contact';
+@import '../css/scss/aboutUs';
 /*NAV BAR*/
 body{
     background-color: #201F25;
@@ -8,16 +9,29 @@ body{
     height: 70px;
     background-color: #121114;
 }
+
 .logo_navbar{
-    padding-left: 100px;
+    padding-left: 10px;
     height: 90%;
 }
-.btn{
-    color: #FE690D;
+#linkAct{
+    color:#FE690D;
+    font-weight: bold;
 }
-.btn:hover{
+
+#link{
     color: #aa470a;
+    font-weight: lighter;
 }
+#link:hover{
+    color: #ff5e00;
+    font-weight: bold;
+}
+#linkAct:hover{
+    color: #ff5e00;
+    font-weight: bold;
+}
+
 
 .icone_reseau {
     display: inline;
@@ -31,11 +45,9 @@ body{
     padding-bottom: 50px;
     border-bottom: 2px solid #FE690D ;
     background-color: #201F25;
-    height: 800px;
+    height:550px;
 }
-.carousel-inner{
- padding-top: 75px;
-}
+
 .captiongd{
     color: #FE690D;
     text-align: left;
@@ -44,6 +56,7 @@ body{
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
+   
     height: 55px;
     width: 55px;
     background-size: 100%, 100%;
@@ -58,6 +71,7 @@ body{
 .carousel-control-next-icon {
     margin-right: -50px
 }
+/*XL*/
 
 @media (min-width: 992px) {
 
@@ -172,8 +186,8 @@ body{
         visibility: visible;
     }
     .carousel-item {
-        height: 600px;
-        width: 427.275px;
+        height: 60vh;
+        width: 40vh;
     }
     
 /*Contenaire Article*/
