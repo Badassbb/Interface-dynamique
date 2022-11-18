@@ -1,6 +1,7 @@
 @import '../css/reset/reset';
 @import '../css/scss/contact';
 @import '../css/scss/aboutUs';
+@import '../css/scss/galerie';
 /*NAV BAR*/
 body{
     background-color: #201F25;
@@ -19,7 +20,7 @@ body{
     font-weight: bold;
 }
 
-#link{
+#link1, #link2, #link3, #link4{
     color: #aa470a;
     font-weight: lighter;
 }
@@ -192,7 +193,13 @@ body{
     
 /*Contenaire Article*/
 
-#contarticle{
+.img{
+    height: 100%;
+    width: 100%;
+}
+
+#contart1, #contart2, #contart3, #contart4,
+#contart5, #contart6, #contart7, #contart8, #contart9{
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: #201F25;
@@ -200,22 +207,24 @@ border-bottom: 2px solid #FE690D;
 padding-right: 200px;
 padding-left: 200px;
 }
-#article{
+
+article{
     color: #FE690D;
-    
-}
-#article2{
-    color: #FE690D;
+}    
+article ul:nth-child(odd){
+
     padding-left: 30px;
 }
-#articletxt{
-    color: #FE690D;
-}
-#articletxt>p, ul{
+
+
+article p:nth-child(odd){
    padding-left: 50px;
 }
-
-#titre_article{
+article span{
+    padding-bottom: 10px;
+    display: block;
+}
+article h2{
     color: #FE690D;
     text-transform: uppercase;
     font-weight: bold;
